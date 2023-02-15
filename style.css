@@ -1,0 +1,55 @@
+body {
+  min-height: fit-content;
+  position: relative;
+}
+.navbar {
+  z-index: 999;
+  width: 100%;
+  position: fixed;
+}
+.jumbotron {
+  box-sizing: border-box;
+  padding-top: 6rem;
+  background-color: #e2edff;
+}
+#projects {
+  background-color: #e2edff;
+}
+#contact-me .contact {
+  max-width: 45%;
+}
+#contact-me .contact form .btn {
+  margin-left: 0.5rem;
+  width: auto;
+}
+#footer {
+  background-color: #e2edff;
+}
+#footer p i {
+  color: cornflowerblue;
+}
+
+@media screen and (max-width: 600px) {
+  #about-me div.row,
+  #footer div.row {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #about-me div.row div,
+  #footer div.row div {
+    /* column-count: 1; */
+    margin-left: 3rem;
+    width: 80%;
+  }
+  .card {
+    margin-bottom: 1rem;
+  }
+  #contact-me .contact {
+    margin: auto;
+    max-width: 75%;
+  }
+}
